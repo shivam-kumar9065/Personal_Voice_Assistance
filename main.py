@@ -90,9 +90,6 @@ if __name__ == '__main__':
         elif 'open discord' in query:
             open_discord()
 
-        elif 'open microsoft edge' in query or 'open edge' in query:
-            open_microsoftEdge()
-
         elif 'open command prompt' in query or 'open cmd' in query:
             open_cmd()
 
@@ -101,22 +98,6 @@ if __name__ == '__main__':
 
         elif 'restart' in query:
             re_start()
-
-        elif "TELEGRAM" in query:
-            speak("Opening TELEGRAM")
-            os.system("telegram")
-
-        elif "EXCEL" in query:
-            speak("Opening MICROSOFT EXCEL")
-            os.system("excel")
-
-        elif "Power Point" in query:
-            speak("Opening MICROSOFT POWERPOINT")
-            os.system("powerpnt")
-
-        elif "WORD" in query:
-            speak("Opening MICROSOFT WORD")
-            os.system("winword")
 
 
         elif 'the time' in query:
@@ -138,24 +119,9 @@ if __name__ == '__main__':
         elif 'system information' in query:
             sys_info('my_system')
 
-        elif 'addition' in query:
-            add()
-            speak("The addition operation is success")
-
-        elif 'open calculator' in query:
-            open_calculator()
-
-        elif 'subtraction' in query:
-            sub()
-            speak("The subtraction of two numbers is completed")
-
         elif 'cpu temperature' in query or 'computer temperature' in query:
             get_cpu_temp()
             print('Computer temperature is {} degC'.format(get_cpu_temp()))
-
-        elif 'my brother' in query:
-            speak("your brother name are Abhishek kumar, Aditay kumar")
-            speak("your brother are younger form you")
 
 
         elif 'ip address' in query:
@@ -260,20 +226,11 @@ if __name__ == '__main__':
         elif 'I love you' in query:
             speak("I love you too")
 
-        elif 'God' in query:
-            speak("yes")
-
-        elif 'your God name' in query or 'your owner name' in query:
-            speak("My owner or god mane is Shivam kumar")
-
         elif 'who made you' in query:
             speak("I have been made by my god")
 
-        elif 'your gender' in query:
-            speak("I am a girl")
-
         elif 'good night' in query:
-            speak("Good night dad, take care!")
+            speak("Good night sir, take care!")
 
         elif 'you need a break' in query:
             speak("ok sir, call me when you have some task")
@@ -288,9 +245,6 @@ if __name__ == '__main__':
             query = take_user_input().lower()
             search_on_googlemaps(query)
 
-        elif 'shivam' in query or 'shivam beta' in query:
-            speak("Be in your limit")
-
         elif '.com' in query:
             speak("opening" + query)
             search(query)
@@ -300,13 +254,9 @@ if __name__ == '__main__':
             install(query)
 
 
-        elif 'beta' in query or 'son' in query:
-            speak('Yes Dad?, What can I doo for you dad?')
-
-
 
         elif 'play music' in query:
-            music_dir = 'D:/New folder (2)'
+            music_dir = 'Path to folder'
             songs = os.listdir(music_dir)
             speak("playing music")
             print(songs)
